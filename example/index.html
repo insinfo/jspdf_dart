@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>jsPDF/ and Dart interop example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://raw.githack.com/yWorks/svg2pdf.js/master/dist/svg2pdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+ 
+  <script defer type="application/javascript" src="example.dart.js"></script>
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      background-color: rgb(211, 211, 211);
+      height: 100%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    iframe{
+      border: none;
+      width: 70%;
+      height: 95%;
+    }
+  
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <iframe id="pdf-iframe"></iframe>
+  </div>
+</body>
+
+</html>
